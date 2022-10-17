@@ -1,59 +1,59 @@
-# CARA PENGGUNAAN GIT
+#CARA PENGGUNAAN GIT
 
-## Instalasi GIT
+## Instalasi Git
 
-#### - Download GIT, buka website resminya Git (git-scm-com). 
-#### - Kemudian untuk git sesuai dengan arsitektur komputer kita. Kalau menggunakan 64bit, unduh yang 64bit. Begitu juga kalau menggunakan 32bit.
-#### - Selamat, Git sudah terinstal di Windows, Untuk mencobanya, silahkan buka CMD atau PowerShell, kemudian ketik perintah
-
+#### - Download GIT, buka website resminya GIT (git-scm-com)
+#### - Kemudian untuk git sesuai dengan arsitektur komputer kita. kalau menggunkan 64bit, unduh yang 64bit. begitu juga kalo menggunakan 32bit.
+#### - Selamat, GIT sudah terinstal di windows, untuk mencobanya, silahkan buka CMD atau Power shell, kemudian ketik perintah
+```
 git --version
-
+```
 ![Gambar1](gambar/git1.png)
 
-#### - Pada saat pertama kali menggunakan git, perlu dilakukan konfigurasi user.name dan user.email
-#### - Konfigurasi ini bisa dilakukan untuk global repository atau individual repository
-#### - Apabila belum dilakukan konfigurasi, akan mengakibatkan terjadi kegagalan saat menjalankan perintah global git commit
+#### - Pada saat pertama kali menggunakan git, perlu dilakukan konfigurasi *user.name* dan *user.email*
+#### - Konfigurasi ini bisa dilakukan untuk global repository atau individual repostory
+#### - Apabila belum dilakukan konfigurasi, akan mengakibatkan terjadi kegagalan saat menjalankan perintah global 
 
 
 #### - Config Global Repository
-
+```
 $ git config -- global user.name "nama_user"
-
-
+```
+```
 $ git config -- global user.email "nama_user"
-
+```
 
 ## Perintah Dasar Git
 
 
-#### - git init, perintah untuk membuat repository lokal.
-#### - git add, perintah untuk menambahkan file baru, atau perubahan pada file pada staging sebelum proses commit.
-#### - git commit, perintah untuk meyimpan perubahan kedalam database git.
-#### - git push -u origin master, perintah untuk mengirim perubahan pada repository lokal menuju server repository.
-#### - git clone [url], perintah untuk membuat working directory yang diambil dari repository server.
-#### - git remote add origin[url], perintah untuk menambahkan remote server/repository server pada lokal repository (working directory)
-#### - git pull, perintah untuk mengambil/mendownload perubahan terbaru dari server repository ke lokal repository.
+#### - git init, perintah untuk membuat repostory.
+#### - git add, perintah untuk menambahkan file baru, atau perubahan pada staging sebelum proses commit.
+#### - git commit, perintah untuk menyimpan perubahan kedalam database git.
+#### - git push -u origin master, perintah untuk mengirim perubahan pada repository lokal menuju repository server.
+#### - git clone[ur1], perintah untuk membuat working directory yang diambil dari repository. 
+#### - git remote add origin[ur1], perintah untuk mengambil remote server
+#### - git pull, perintah untuk mengambil/mendownload perubahan terbaru dari server repository server ke lokal repository.
 
 ## Membuat Repository Lokal
 
-#### - Buka directory aktif misal : C:\Users\User\Desktop\dlabs_pemograman1 (buka menggunakan Windows Explorer)
+#### - Buka directory aktif misal : C:\Users\user\lab_pemograman1(buka menggunakan Windows Explorer)
 #### - Klik kanan pada directory aktif tersebut, dan pilih menu Git Bash. sehingga muncul git bash command
 #### - Buat directory project praktikum pertama dengan nama Latihan1
-
+```
 $ mkdir Latihan1
-
-
+```
+```
 $ cd Latihan1
-
+```
 #### - Sehingga terbentuk suatu directory baru dibawahnya, selanjutnya masuk kedalam directory tersebut dengan perintah cd (change directory).
-#### - Directory aktif menjadi : C:\Users\User\Desktop\lab_pemograman1\Latihan1
+#### - Directory aktif menjadi : C:\Users\User\Desktop\dlabs_pemograman1\Latihan1
 
 ## Membuat Repository Lokal
 
 #### - Jalankan perintah git init, untuk membuat repository lokal.
-
+```
 $ git init
-
+```
 #### - Repository baru berhasil di inisialisasi, dengan terbentuknya satu directory hidden dengan nama .git
 #### - Pada directory tersebut, semua perubahan pada working directory akan disimpan.
 
@@ -61,15 +61,15 @@ $ git init
 
 #### - Untuk menambahkan file dapat menggunakan text editor, lalu menyimpan filenya pada directory aktif (repository).
 #### - Disini kita akan coba buat satu file bernama README.md (text file)
-
+```
 $ echo "# Latihan 1 " >> README.md
-
+```
 #### - File README.md berhasil dibuat.
 ![Gambar1](gambar/git2.png)
 #### - Untuk menambahkan file yang baru saja dibuat tersebut gunakan perintah git add.
-
+```
 $ git add README.md
-
+```
 #### - File README.md berhasil ditambahkan.
 
 ![Gambar1](gambar/git3.png)
@@ -100,15 +100,15 @@ $ git add README.md
 #### - Remote Repository merupakan repository server yang akan digunakan untuk menyimpan setiap perubahan pada lokal repository, sehingga dapat diakses oleh banya user.
 #### - Untuk menambahkan remote repository server, gunakanlah perintah
 ####  Git remote add origin [url]
-
-$ git remote add https://github.com/heyytayo963/labpy.git
-
+```
+$ git remote add https://github.com/RadjaAzukio/labpy1.git
+```
 ## Push ( Mengirim Perubahan ke Server)
 
 #### - Untuk mengirim perubahan pada lokal repostiory ke server gunakan perintah git push.
-
+```
 $ git push -u origin master
-
+```
 #### - Perintah ini akan meminta memasukkan username dan password pada akun anda di github.com
 
 ![Gambar1](gambar/git8.png)
@@ -126,8 +126,9 @@ $ git push -u origin master
 #### - Clone repository, pada dasarya adalah meng-copy repository server dan secara otomatis membuat satu directory sesuai dengan nama repositorynya (working directory).
 #### - Untuk melakukan cloning, gunakan perintah git clone [url]
 
-
-$ git clone [https://github.com/heyytayo963/labpy.git]
+```
+$ git clone [https://github.com/RadjaAzukio/labpy1.git]
+```
 
 
 ![Gambar1](gambar/git10.png)
