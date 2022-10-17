@@ -127,7 +127,7 @@ $ git push -u origin master
 #### - Untuk melakukan cloning, gunakan perintah git clone [url]
 
 ```
-$ git clone [https://github.com/RadjaAzukio/labpy1.git]
+$ git clone [https://github.com/heyytayo963/labpy1.git]
 ```
 
 
